@@ -3,9 +3,11 @@ import contextlib
 import io
 import sys
 from pathlib import Path
-
 import pandas as pd
 import streamlit as st
+from app.graph_db import get_graph
+from app.impact_analysis import trace_impact
+from app.ast_parser import scan_project
 
 # --------------------------------------------------
 # Project paths and backend imports
